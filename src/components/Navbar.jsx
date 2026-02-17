@@ -33,7 +33,7 @@ export default function Navbar() {
             {['Home', 'Menu', 'About', 'Contact'].map((item) => (
               <a 
                 key={item} 
-                href={`#${item.toLowerCase()}`} 
+                href={`${item.toLowerCase()}`} 
                 className="font-display font-semibold text-gray-700 hover:text-accent transition-colors"
               >
                 {item}
