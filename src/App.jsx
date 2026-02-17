@@ -5,20 +5,24 @@ import About from './sections/About';
 import Contact from './sections/Contact';
 
 import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 function App() {
+  const location = useLocation();
+
   useEffect(() => {
-    const path = window.location.pathname.substring(1); // Remove leading slash
+    const path = location.pathname.substring(1); // Remove leading slash
     if (path) {
       const element = document.getElementById(path);
       if (element) {
-        // Small delay to ensure rendering
-        setTimeout(() => {
-          element.scrollIntoView({ behavior: 'smooth' });
-        }, 100);
+        // Scroll to element
+        element.scrollIntoView({ behavior: 'smooth' });
       }
+    } else {
+      // If path is empty (root), scroll to top
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
-  }, []);
+  }, [location]);
 
   return (
     <div className="min-h-screen bg-white overflow-x-hidden w-full">
