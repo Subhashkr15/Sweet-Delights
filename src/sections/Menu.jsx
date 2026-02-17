@@ -7,7 +7,7 @@ const products = [
   { id: 2, name: "Chocolate Delight", price: "₹150", desc: "Rich belgian chocolate", color: "bg-amber-100", img: "https://images.unsplash.com/photo-1550617931-e17a7b70dce2?q=80&w=400&auto=format&fit=crop" },
   { id: 3, name: "Blueberry Muffin", price: "₹90", desc: "Bursting with blueberries", color: "bg-blue-100", img: "https://images.unsplash.com/photo-1607958996333-41aef7caefaa?q=80&w=400&auto=format&fit=crop" },
   { id: 4, name: "Macaron Box", price: "₹350", desc: "Assorted french macarons", color: "bg-purple-100", img: "https://images.unsplash.com/photo-1569864358642-9d1684040f43?q=80&w=400&auto=format&fit=crop" },
-  { id: 5, name: "Croissant", price: "₹80", desc: "Butter & Flaky Pastry", color: "bg-orange-100", img: "https://images.pexels.com/photos/3993720/pexels-photo-3993720.jpeg" },
+  { id: 5, name: "Croissant", price: "₹80", desc: "Butter & Flaky Pastry", color: "bg-orange-100", img: "https://images.unsplash.com/photo-1731153073446-fb3ed78bcf63?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
   { id: 6, name: "Red Velvet", price: "₹140", desc: "Classic with cream cheese", color: "bg-red-100", img: "https://images.unsplash.com/photo-1714386148315-2f0e3eebcd5a?q=80&w=436&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
 ];
 

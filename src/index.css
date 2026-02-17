@@ -14,4 +14,5 @@ body {
   font-family: var(--font-body);
   background-color: #fff1f2; /* Soft pink background */
   color: #831843; /* Dark pink text */
+  overflow-x: hidden;
 }
