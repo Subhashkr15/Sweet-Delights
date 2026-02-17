@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #fce7f3;
+  --color-secondary: #fbcfe8;
+  --color-accent: #db2777;
+  
+  /* We will add fonts via Google Fonts in index.html */
+  --font-display: 'Fredoka', sans-serif;
+  --font-body: 'Quicksand', sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: #fff1f2; /* Soft pink background */
+  color: #831843; /* Dark pink text */
+}
