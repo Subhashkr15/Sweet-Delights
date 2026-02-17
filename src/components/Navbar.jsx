@@ -33,7 +33,16 @@ export default function Navbar() {
             {['Home', 'Menu', 'About', 'Contact'].map((item) => (
               <a 
                 key={item} 
-                href={`${item.toLowerCase()}`} 
+                href={`/${item.toLowerCase()}`}
+                onClick={(e) => {
+                  e.preventDefault();
+                  const id = item.toLowerCase();
+                  const element = document.getElementById(id);
+                  if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                    window.history.pushState({}, '', `/${id}`);
+                  }
+                }}
                 className="font-display font-semibold text-gray-700 hover:text-accent transition-colors"
               >
                 {item}
@@ -60,9 +69,18 @@ export default function Navbar() {
                {['Home', 'Menu', 'About', 'Contact'].map((item) => (
                 <a 
                   key={item} 
-                  href={`${item.toLowerCase()}`} 
+                  href={`/${item.toLowerCase()}`}
                   className="text-lg font-display font-semibold text-gray-700 hover:text-accent" 
-                  onClick={() => setIsOpen(false)}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setIsOpen(false);
+                    const id = item.toLowerCase();
+                    const element = document.getElementById(id);
+                    if (element) {
+                      element.scrollIntoView({ behavior: 'smooth' });
+                      window.history.pushState({}, '', `/${id}`);
+                    }
+                  }}
                 >
                   {item}
                 </a>

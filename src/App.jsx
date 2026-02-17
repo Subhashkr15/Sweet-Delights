@@ -4,7 +4,22 @@ import Menu from './sections/Menu';
 import About from './sections/About';
 import Contact from './sections/Contact';
 
+import { useEffect } from 'react';
+
 function App() {
+  useEffect(() => {
+    const path = window.location.pathname.substring(1); // Remove leading slash
+    if (path) {
+      const element = document.getElementById(path);
+      if (element) {
+        // Small delay to ensure rendering
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }, 100);
+      }
+    }
+  }, []);
+
   return (
     <div className="min-h-screen bg-white overflow-x-hidden w-full">
       <Navbar />
