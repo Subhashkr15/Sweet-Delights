@@ -60,7 +60,7 @@ export default function Navbar() {
                {['Home', 'Menu', 'About', 'Contact'].map((item) => (
                 <a 
                   key={item} 
-                  href={`#${item.toLowerCase()}`} 
+                  href={`${item.toLowerCase()}`} 
                   className="text-lg font-display font-semibold text-gray-700 hover:text-accent" 
                   onClick={() => setIsOpen(false)}
                 >
