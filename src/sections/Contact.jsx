@@ -84,7 +84,7 @@ export default function Contact() {
                     type="text" 
                     required
                     className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-accent focus:ring-2 focus:ring-pink-100 outline-none transition-all"
-                    placeholder="Jane Doe"
+                    placeholder="Enter your full name"
                     value={formState.name}
                     onChange={e => setFormState({...formState, name: e.target.value})}
                   />
@@ -95,7 +95,7 @@ export default function Contact() {
                     type="email" 
                     required
                     className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-accent focus:ring-2 focus:ring-pink-100 outline-none transition-all"
-                    placeholder="jane@example.com"
+                    placeholder="your.email@provider.com"
                     value={formState.email}
                     onChange={e => setFormState({...formState, email: e.target.value})}
                   />
